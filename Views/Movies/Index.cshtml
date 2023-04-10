@@ -1,0 +1,26 @@
+﻿@model Vidly.ViewModels.AllMoviesViewModel
+
+<h2>Catalogue of Movies</h2>
+
+@if (Model.Movies.Count <= 0)
+{
+    <h4>There aren't any movies yet.</h4>
+}
+else
+{
+    <ul class="list-unstyled">
+            @foreach (Movie movie in Model.Movies)
+            {
+                <li>
+                    @Html.ActionLink(
+                        movie.Name, 
+                        "Details", 
+                        "Movies", 
+                        new { id = movie.Id },
+                        null
+                        )
+                </li>
+            }
+    </ul>
+}
+
