@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Data.Entity;
+using Microsoft.AspNetCore.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
 
@@ -6,24 +7,36 @@ namespace Vidly.Controllers
 {
     public class CustomerController : Controller
     {
-        private List<Customer> customers = new List<Customer>
+        private ApplicationDbContext _context;
+
+
+        public CustomerController()
         {
-            new Customer { Id = 0, Name = "Manuel"},
-            new Customer { Id = 1, Name = "Tiago"},
-            new Customer { Id = 2, Name = "Danilo"},
-            new Customer { Id = 3, Name = "Valentín"}
-        };
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
 
         public IActionResult Index()
         {
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             var viewModel = new AllCustomersViewModel { Customers = customers };
             return View(viewModel);
         }
 
         public IActionResult Details(int id)
         {
-            var customer = customers[id];
+            var customer = _context.Customers.SingleOrDefault( c => c.Id == id );
+            
+            if (customer == null) 
+                return NotFound();
+
             return View(customer);
         }
     }
+
+        
 }
