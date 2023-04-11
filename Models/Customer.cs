@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Vidly.Models
 {
@@ -13,5 +14,6 @@ namespace Vidly.Models
         public bool IsSubscribedToNewsleetter { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+        public DateTime? Birthday { get; set; }
     }
 }

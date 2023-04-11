@@ -58,3 +58,5 @@ C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.Popula
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.AddingThePropertyNameToMembershipType.resources
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.UpdateMembershipTypesAddingTheNames.resources
+C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.AddingBirthdayToCustomer.resources
+C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.MakingCustomersBirthdayNullable.resources
