@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Data.Entity;
+using Microsoft.AspNetCore.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
 
@@ -6,27 +7,23 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        private List<Movie> movies = new()
+        private ApplicationDbContext _context;
+
+        public MoviesController()
         {
-            new Movie{Id = 0, Name = "Shrek!"},
-            new Movie{Id = 1, Name = "Harry Potter"},
-            new Movie{Id = 2, Name = "Lord of the Rings"},
-            new Movie{Id = 3, Name = "John Wick"}
-        };
+            _context = new ApplicationDbContext();
+        }
 
         public IActionResult Index()
         {
-            var viewModel = new AllMoviesViewModel
-            {
-                Movies = movies
-            };
-
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
+            var viewModel = new AllMoviesViewModel { Movies = movies};
             return View(viewModel);
         }
 
         public IActionResult Details(int id)
         {
-            var movie = movies[id];
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
             return View(movie);
         }
 

@@ -1,3 +1,9 @@
 ﻿@model Movie
 <h1>@Model.Name</h1>
+<ul>
+    <li>Genre: @Model.Genre.Name</li>
+    <li>Date Added: @Model.DateAdded.ToShortDateString()</li>
+    <li>Release Date: @Model.ReleaseDate.ToShortDateString()</li>
+    <li>Stock: @Model.Stock</li>
 
+</ul>

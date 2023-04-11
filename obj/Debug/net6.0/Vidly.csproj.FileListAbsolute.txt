@@ -60,3 +60,6 @@ C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.Adding
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.UpdateMembershipTypesAddingTheNames.resources
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.AddingBirthdayToCustomer.resources
 C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.MakingCustomersBirthdayNullable.resources
+C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.AddingStockReleaseDateAndDateAddedToMovieModel.resources
+C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.AddingGenreAndIncludingItIntoMovie.resources
+C:\Users\manuc\source\repos\Vidly\Vidly\obj\Debug\net6.0\Vidly.Migrations.PopulatingGenre.resources

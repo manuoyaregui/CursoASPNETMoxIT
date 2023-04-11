@@ -8,10 +8,20 @@
 }
 else
 {
-    <ul class="list-unstyled">
-            @foreach (Movie movie in Model.Movies)
-            {
-                <li>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>Movie</th>
+            <th>Genre</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+        @foreach (Movie movie in Model.Movies)
+        {
+            <tr>
+                <td>
                     @Html.ActionLink(
                         movie.Name, 
                         "Details", 
@@ -19,8 +29,14 @@ else
                         new { id = movie.Id },
                         null
                         )
-                </li>
-            }
-    </ul>
+                </td>
+                <td>
+                    @movie.Genre.Name
+                </td>
+            </tr>
+        }
+
+        </tbody>
+    </table>
 }
 
