@@ -4,6 +4,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
+    //mipagina.com/home/index
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

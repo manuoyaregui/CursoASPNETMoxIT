@@ -2,6 +2,14 @@
 
 <h2>Catalogue of Movies</h2>
 
+@Html.ActionLink(
+    "Create", 
+    "New", 
+    "Movies",
+    new {},
+    new { @class = "btn btn-primary p-1 my-2" }
+    )
+
 @if (Model.Movies.Count <= 0)
 {
     <h4>There aren't any movies yet.</h4>

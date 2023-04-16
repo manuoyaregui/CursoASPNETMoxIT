@@ -1,0 +1,69 @@
+﻿@model Vidly.ViewModels.CustomerFormViewModel
+@{
+    ViewData["Title"] = "New";
+}
+
+
+@if (Model.Customer == null)
+{
+<h1>Create</h1>
+}
+else{
+<h1>Edit</h1>
+}
+
+@using (Html.BeginForm("Save", "Customer"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Name)
+        @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Birthday)
+        @Html.TextBoxFor(
+            m => m.Customer.Birthday, 
+            new
+            {
+                @class = "form-control", 
+                type ="date"
+            })
+        @if (Model.Customer != null)
+        {
+            <p>Default value @Model.Customer.Birthday?.ToShortDateString()</p>
+        }
+    </div>
+    <div class="checkbox">
+        <label>
+            @Html.CheckBoxFor( m => m.Customer.IsSubscribedToNewsletter )
+            Suscribed to Newsletter?
+        </label>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.MembershipTypeId,"Membership Type")
+        @Html.DropDownListFor(
+            m => m.Customer.MembershipTypeId, 
+            new SelectList(Model.MembershipTypes, 
+                "Id", 
+                "Name"), 
+            "Select Membership Type" 
+            , new { @class = "form-control"})
+            
+    </div>
+
+    @Html.HiddenFor(m => m.Customer.Id)
+    
+    @if (Model.Customer == null)
+    {
+        <button class="btn btn-primary m-2" type="submit">
+            Create
+        </button>
+    }
+    else
+    {
+    <button class="btn btn-primary m-2" type="submit">
+        Edit
+    </button>
+
+    }
+}
+

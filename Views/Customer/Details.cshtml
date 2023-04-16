@@ -9,5 +9,8 @@
         <li>@Model.Birthday</li>
 
     }
+    <li>
+        @Html.ActionLink( "Edit","Edit","Customer",new {id = Model.Id},new{ @class = "btn btn-primary p-2 m-2" } )
+    </li>
 </ul>
 
