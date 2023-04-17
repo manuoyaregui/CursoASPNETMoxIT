@@ -36,20 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movies/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
+[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movies/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movies/MovieForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXE1vdmllRm9ybS5jc2h0bWw=
+[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movie/MovieForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcTW92aWVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movies/Random.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXFJhbmRvbS5jc2h0bWw=
+[C:/Users/manuc/source/repos/Vidly/Vidly/Views/Movie/Random.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcUmFuZG9tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/manuc/source/repos/Vidly/Vidly/Views/Shared/Error.cshtml]

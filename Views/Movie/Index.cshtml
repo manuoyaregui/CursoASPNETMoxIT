@@ -5,7 +5,7 @@
 @Html.ActionLink(
     "Create", 
     "New", 
-    "Movies",
+    "Movie",
     new {},
     new { @class = "btn btn-primary p-1 my-2" }
     )
@@ -33,7 +33,7 @@ else
                     @Html.ActionLink(
                         movie.Name, 
                         "Details", 
-                        "Movies", 
+                        "Movie", 
                         new { id = movie.Id },
                         null
                         )

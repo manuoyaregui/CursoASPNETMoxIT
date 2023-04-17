@@ -1,4 +1,9 @@
+using AutoMapper;
+using Vidly.Dtos;
+
 var builder = WebApplication.CreateBuilder(args);
+
+Mapper.Initialize( c => c.AddProfile<MappingProfile>() );
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

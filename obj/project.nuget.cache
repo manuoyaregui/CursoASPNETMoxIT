@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xl4J2cNqyBh0J8Y5SgBETvppjIk9Cvp/OLOYM0+HQayOk+28NOkY5KctnIgWLlPbFFdOoh6axs5j6fiA/QkPzQ==",
+  "dgSpecHash": "kC7N2RGLagNLzzWWm5wQr9HN3lhOPTs93RFhclnN+HV68MZnHj27XXW1UDLzavV80nWgORFocCy1OaYXs93LTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\Vidly.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\manuc\\.nuget\\packages\\automapper\\4.1.0\\automapper.4.1.0.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -161,5 +162,16 @@
     "C:\\Users\\manuc\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

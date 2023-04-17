@@ -8,11 +8,20 @@
     ".NETCoreApp,Version=v6.0": {
       "Vidly/1.0.0": {
         "dependencies": {
+          "AutoMapper": "4.1.0",
           "EntityFramework": "6.4.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13"
         },
         "runtime": {
           "Vidly.dll": {}
+        }
+      },
+      "AutoMapper/4.1.0": {
+        "runtime": {
+          "lib/net45/AutoMapper.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -2079,6 +2088,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PDag8anMYU0ZGHsPAsF8SY+Gj3JPPQ4Sm0PH4TCc4ktk56C4lCtt2WHlqR92/szFWo1L+50seVKOBiGyK06LhQ==",
+      "path": "automapper/4.1.0",
+      "hashPath": "automapper.4.1.0.nupkg.sha512"
     },
     "EntityFramework/6.4.4": {
       "type": "package",
