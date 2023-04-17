@@ -44,14 +44,28 @@ namespace Vidly.Controllers
             var memberShipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = memberShipTypes
             };
             return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Save(Customer customer)
         {
+            if (!ModelState.IsValid)
+            {
+                var memberShipTypes = _context.MembershipTypes.ToList();
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = memberShipTypes
+                };
+                return View("CustomerForm", viewModel);
+            }
+
+
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
             else
@@ -59,21 +73,19 @@ namespace Vidly.Controllers
                 var customerInDB = _context.Customers.Single(c => c.Id == customer.Id);
                 
                 customerInDB.Name = customer.Name;
-                customerInDB.MembershipType = customer.MembershipType;
                 customerInDB.Birthday = customer.Birthday;
+                customerInDB.MembershipTypeId = customer.MembershipTypeId;
                 customerInDB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
             }
 
-
-            _context.Customers.Add(customer);
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customer");
         }
+        
         public IActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
-            if (customer == null) return NotFound();
 
 
             var viewModel = new CustomerFormViewModel
