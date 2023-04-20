@@ -16,9 +16,8 @@ namespace Vidly.Controllers
 
         public IActionResult Index()
         {
-            var movies = _context.Movies.Include(m => m.Genre).ToList();
-            var viewModel = new AllMoviesViewModel { Movies = movies};
-            return View(viewModel);
+            
+            return View();
         }
 
         public IActionResult Details(int id)
@@ -81,9 +80,8 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Save(MovieFormViewModel vm)
+        public IActionResult Save(Movie movie)
         {
-            Movie movie = vm.Movie;
 
             if (! ModelState.IsValid)
             {

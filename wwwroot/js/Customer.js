@@ -1,5 +1,8 @@
 
-$( document ).ready(function () {
+$(document).ready(function () {
+
+
+
     var url = "/api/customers";
     var dataTable = $("#customers").DataTable({
         ajax: {

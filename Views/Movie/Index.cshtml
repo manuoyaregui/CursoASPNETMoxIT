@@ -1,6 +1,4 @@
-﻿@model Vidly.ViewModels.AllMoviesViewModel
-
-<h2>Catalogue of Movies</h2>
+﻿<h2>Catalogue of Movies</h2>
 
 @Html.ActionLink(
     "Create", 
@@ -10,41 +8,26 @@
     new { @class = "btn btn-primary p-1 my-2" }
     )
 
-@if (Model.Movies.Count <= 0)
+<table id="movies" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Movie</th>
+        <th>Genre</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        @*Acá se inserta el ajax de Movie.js*@
+    
+    </tbody>
+</table>
+
+@section Scripts
 {
-    <h4>There aren't any movies yet.</h4>
+    <script src="js/Movie.js">
+    
+
+    </script>
+    
 }
-else
-{
-    <table class="table table-bordered table-hover">
-        <thead>
-        <tr>
-            <th>Movie</th>
-            <th>Genre</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-        @foreach (Movie movie in Model.Movies)
-        {
-            <tr>
-                <td>
-                    @Html.ActionLink(
-                        movie.Name, 
-                        "Details", 
-                        "Movie", 
-                        new { id = movie.Id },
-                        null
-                        )
-                </td>
-                <td>
-                    @movie.Genre.Name
-                </td>
-            </tr>
-        }
-
-        </tbody>
-    </table>
-}
-

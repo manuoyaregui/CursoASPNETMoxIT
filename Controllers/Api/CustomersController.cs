@@ -1,10 +1,7 @@
-﻿using System.Net;
-using System.Security;
+﻿
 using System.Data.Entity;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http.Abstractions;
 using Microsoft.AspNetCore.Http.Extensions;
 using Vidly.Dtos;
 using Vidly.Models;

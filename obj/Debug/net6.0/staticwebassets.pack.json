@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\Customer.js"
     },
     {
+      "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\Movie.js",
+      "PackagePath": "staticwebassets\\js\\Movie.js"
+    },
+    {
       "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
