@@ -5,26 +5,24 @@
 
 @Html.ActionLink( "Create","New","Customer",new {},new{ @class = "btn btn-primary p-2 m-2" } )
 
-@if (Model.Customers.Count <= 0)
-{
-    <h4>There aren't any customerDtoDtos yet.</h4>
-}
-else
-{
-    <table class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>Customer</th>
-                <th>Membership Type</th>
-                <th>Discount Rate</th>
-            </tr>
-        </thead>
+<table id="customers" class="table table-bordered table-hover">
     
+    <button id="miboton" class='btn btn-primary js-delete' data-customer-id=4 > Delete</button >
 
-        <tbody>
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Membership Type</th>
+        <th>Discount Rate</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
 
-    
-        @foreach (Customer customer in Model.Customers)
+
+    <tbody>
+
+
+    @*@foreach (Customer customer in Model.Customers)
         {
             <tr>
                 <td>
@@ -41,10 +39,22 @@ else
                 <td>
                     @customer.MembershipType.DiscountRate%
                 </td>
+                <td>
+                    <button data-customer-id="@customer.Id" class="btn btn-danger js-delete">Delete</button>
+                </td>
                     
             </tr>
-        }
-        </tbody>
+        }*@
+    </tbody>
 
-    </table>
+</table>
+
+
+@section Scripts
+{
+<script src="js/Customer.js">
+    
+
+</script>
+    
 }

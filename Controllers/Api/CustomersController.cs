@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Security;
+using System.Data.Entity;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,11 @@ namespace Vidly.Controllers.Api
         [HttpGet]
         public IEnumerable<CustomerDto> GetCustomers()
         {
-            return _context.Customers.ToList().Select( Mapper.Map<Customer,CustomerDto> );
+            var customersDtos = _context.Customers
+                    .Include(c => c.MembershipType)
+                    .ToList()
+                    .Select(Mapper.Map<Customer, CustomerDto>); ;
+            return customersDtos;
         }
 
 
@@ -80,17 +85,19 @@ namespace Vidly.Controllers.Api
             return Ok(customerInDb);
         }
 
-        [HttpDelete]
-        public void DeleteCustomer(int id)
+        [HttpDelete("{id:int}")]
+        public ActionResult<MovieDto> DeleteCustomer(int id)
         {
             var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customerInDb == null)
-                throw new HttpRequestException("Not Found", null, HttpStatusCode.NotFound);
+                return NotFound();
 
             _context.Customers.Remove(customerInDb);
             
             _context.SaveChanges();
+
+            return Ok(customerInDb);
         }
 
     }

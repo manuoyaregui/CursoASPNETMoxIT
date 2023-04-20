@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="4.1.0" />
+    <PackageReference Include="bootbox" Version="4.3.0" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="jquery" Version="3.6.4" />
+    <PackageReference Include="jquery.datatables" Version="1.10.11" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 

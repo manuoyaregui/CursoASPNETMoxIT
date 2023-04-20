@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kC7N2RGLagNLzzWWm5wQr9HN3lhOPTs93RFhclnN+HV68MZnHj27XXW1UDLzavV80nWgORFocCy1OaYXs93LTw==",
+  "dgSpecHash": "kerT7fEaDWNFaOO/J5aINEZjnJI0X+/VMO5HfZjyJcjFrWWcKwMUTG8+koknXDhuO03UL1lCGYtA4zO2FuJ4Vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\Vidly.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manuc\\.nuget\\packages\\automapper\\4.1.0\\automapper.4.1.0.nupkg.sha512",
+    "C:\\Users\\manuc\\.nuget\\packages\\bootbox\\4.3.0\\bootbox.4.3.0.nupkg.sha512",
+    "C:\\Users\\manuc\\.nuget\\packages\\bootstrap\\3.0.0\\bootstrap.3.0.0.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\manuc\\.nuget\\packages\\jquery\\3.6.4\\jquery.3.6.4.nupkg.sha512",
+    "C:\\Users\\manuc\\.nuget\\packages\\jquery.datatables\\1.10.11\\jquery.datatables.1.10.11.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\manuc\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

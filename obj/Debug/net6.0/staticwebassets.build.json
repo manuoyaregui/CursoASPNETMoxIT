@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H42hHkxYIBIE0sdGEdxsZUx2tAgAyRs9NoGqFBR5m5g=",
+  "Hash": "TcCL+T+7Y819pMWUHEq6lrVOwed5kzEIA/w3chR8bA4=",
   "Source": "Vidly",
   "BasePath": "_content/Vidly",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\Customer.js",
+      "SourceId": "Vidly",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\",
+      "BasePath": "_content/Vidly",
+      "RelativePath": "js/Customer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Customer.js"
+    },
+    {
       "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\site.js",
       "SourceId": "Vidly",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\bootbox\\bootbox.all.min.js",
+      "SourceId": "Vidly",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\",
+      "BasePath": "_content/Vidly",
+      "RelativePath": "lib/bootbox/bootbox.all.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootbox\\bootbox.all.min.js"
     },
     {
       "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -882,6 +916,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\datatables\\datatables.min.js",
+      "SourceId": "Vidly",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\",
+      "BasePath": "_content/Vidly",
+      "RelativePath": "lib/datatables/datatables.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\datatables\\datatables.min.js"
     },
     {
       "Identity": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\jquery\\dist\\jquery.js",

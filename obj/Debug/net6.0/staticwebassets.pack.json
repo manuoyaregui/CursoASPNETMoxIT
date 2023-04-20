@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\Customer.js",
+      "PackagePath": "staticwebassets\\js\\Customer.js"
+    },
+    {
       "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\bootbox\\bootbox.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootbox\\bootbox.all.min.js"
     },
     {
       "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -199,6 +207,10 @@
     {
       "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\datatables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\datatables.min.js"
     },
     {
       "Id": "C:\\Users\\manuc\\source\\repos\\Vidly\\Vidly\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
